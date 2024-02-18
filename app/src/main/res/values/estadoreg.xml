@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipos_de_violencia">
+        <item>Violencia física</item>
+        <item>Violencia verbal o psicológica</item>
+        <item>Acoso sexual</item>
+        <item>Violencia sexual</item>
+        <item>Violencia económica</item>
+        <item>Control coercitivo</item>
+        <item>Violencia digital o ciberacoso</item>
+        <item>Violencia institucional</item>
+        <item>Violencia simbólica</item>
+        <item>Violencia de género</item>
+    </string-array>
+</resources>

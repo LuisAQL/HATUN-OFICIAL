@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ciudades">
+        <item>La Paz</item>
+        <item>Cochabamba</item>
+        <item>Santa Cruz</item>
+        <item>Potosí</item>
+        <item>Oruro</item>
+        <item>Tarija</item>
+        <item>Chuquisaca</item>
+        <item>Beni</item>
+        <item>Pando</item>
+    </string-array>
+</resources>

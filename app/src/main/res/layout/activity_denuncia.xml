@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D255A"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Información Personal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DENUNCIAS"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Resto de tus elementos -->
+
+            <!-- Establece el color de texto para tus elementos -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información Personal"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Nombre Completo"
+                android:background="@drawable/lavender_border"
+                android:paddingLeft="18dp"
+                android:shadowColor="@color/white"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/editTextFecha"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lavender_border"
+                    android:paddingLeft="18dp"
+                    android:textColor="@color/white"
+                    android:hint="Fecha de Agresión"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"/>
+
+                <Button
+                    android:id="@+id/btnFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Seleccionar Fecha" />
+            </LinearLayout>
+
+
+
+            <Spinner
+                android:id="@+id/spinnerTipoD"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:paddingLeft="8dp"
+                android:drawablePadding="8dp"
+                android:textSize="15sp"
+                android:entries="@array/tipos_de_violencia"
+                android:textColor="@color/black" />
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/editTextHora"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lavender_border"
+                    android:paddingLeft="18dp"
+                    android:textColor="@color/white"
+                    android:hint="Hora de la Agresión"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"/>
+
+                <Button
+                    android:id="@+id/btnHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Seleccionar Hora" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:text="Detalles de la Denuncia"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTexDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/lavender_border"
+                android:paddingLeft="18dp"
+                android:hint="Descripción de la Denuncia"
+                android:inputType="textMultiLine"
+                android:lines="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+
+                android:text="Ingresar tus pruebas Graficas(Opcional)"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imagePreview1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/logoingresarimg"
+                android:clickable="true"
+                android:contentDescription="Seleccionar imagen" />
+
+
+            <Button
+                android:id="@+id/buttonenviardenuncia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="enviarDenuncia"
+                android:text="Enviar Denuncia"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
